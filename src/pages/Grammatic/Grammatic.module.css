@@ -1,0 +1,94 @@
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.key{
+    text-align: center;
+    border-radius: 50px;
+    height: 40px;
+    width: 30%;
+    font-size: 16px;
+}
+
+.key::placeholder{
+    text-align: center;
+    font-size: 16px;
+}
+
+.check {
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    letter-spacing: 5px;
+    background: rgb(32, 233, 166);
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.check:hover {
+    background: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
+   height: 50vh;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.textarea {
+    color: black;
+    background: none;
+    width: 90%;
+    height: 90%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.textarea::placeholder{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* instuction */
+
+.instruction{
+    padding: 0 25px ;
+}
+
+.txt{
+    text-align: center;
+}
+
+.p{
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.site{
+    color:rgb(32, 233, 166);
+}
+
+
