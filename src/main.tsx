@@ -9,7 +9,7 @@ import Grammatic from './pages/Grammatic/Grammatic';
 
 const Router = createBrowserRouter([
   {
-    path: '/main',
+    path: '/textAnalysis',
     element: <Layout />,
      children: [
       {

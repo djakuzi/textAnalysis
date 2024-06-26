@@ -14,13 +14,13 @@ import Button from "../../сomponents/Button/Button";
         <div className={styles["menu"]} onPointerDown={() => setClassLink('open')}>МЕНЮ</div>
         <div className={styles[classLink]}> 
 
-            <NavLink onClick={()=> setClassLink('sidebar')} to='/main/analysis' className={ ({isActive}) => cn(styles['link'],{
+            <NavLink onClick={()=> setClassLink('sidebar')} to='/textAnalysis/analysis' className={ ({isActive}) => cn(styles['link'],{
                     [styles.active]: isActive,
                 })} >
                 Анализ текста
             </NavLink>
 
-            <NavLink onClick={()=> setClassLink('sidebar')} to='/main/grammatic' className={ ({isActive}) => cn(styles['link'],{
+            <NavLink onClick={()=> setClassLink('sidebar')} to='/textAnalysis/grammatic' className={ ({isActive}) => cn(styles['link'],{
                     [styles.active]: isActive,
                 })}>
                 Автокоррекция текста
