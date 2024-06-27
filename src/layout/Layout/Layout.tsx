@@ -1,12 +1,17 @@
-import { NavLink, Outlet} from "react-router-dom";
+import { NavLink, Outlet, useNavigate} from "react-router-dom";
 import styles from './Layout.module.css';
 import cn from 'classnames';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../../сomponents/Button/Button";
 
  export default function Layout(){
 
     const [classLink, setClassLink] = useState<string>('sidebar')
+    const navigate = useNavigate()
+
+    useEffect(()=>{
+        navigate('/textAnalysis/analysis')
+    },[])
 
 // "sidebar"
     return  <div className={styles["screen"]}>
