@@ -4,6 +4,6 @@ import styles from './Error.module.css'
 
 export default function Error(){
     return <>
-    <div className={styles['error']}>Путь, является не верным <Link to='/textAnalysis/analysis' className={styles['link']}>ТЫКНИ</Link></div>
+    <div className={styles['error']}>Путь, является не верным <Link to='/analysis' className={styles['link']}>ТЫКНИ</Link></div>
     </>
 }

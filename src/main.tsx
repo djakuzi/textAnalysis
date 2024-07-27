@@ -9,7 +9,7 @@ import Grammatic from './pages/Grammatic/Grammatic';
 
 const Router = createBrowserRouter([
   {
-    path: '/textAnalysis',
+    path: '/',
     element: <Layout />,
      children: [
       {
@@ -27,7 +27,7 @@ const Router = createBrowserRouter([
     ]
   },
  
-]); 
+], {basename: '/textAnalysis'}); 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

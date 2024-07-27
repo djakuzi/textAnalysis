@@ -10,7 +10,7 @@ import Button from "../../сomponents/Button/Button";
     const navigate = useNavigate()
 
     useEffect(()=>{
-        navigate('/textAnalysis/analysis')
+        navigate('/analysis')
     },[])
 
 // "sidebar"
@@ -19,13 +19,13 @@ import Button from "../../сomponents/Button/Button";
         <div className={styles["menu"]} onPointerDown={() => setClassLink('open')}>МЕНЮ</div>
         <div className={styles[classLink]}> 
 
-            <NavLink onClick={()=> setClassLink('sidebar')} to='/textAnalysis/analysis' className={ ({isActive}) => cn(styles['link'],{
+            <NavLink onClick={()=> setClassLink('sidebar')} to='/analysis' className={ ({isActive}) => cn(styles['link'],{
                     [styles.active]: isActive,
                 })} >
                 Анализ текста
             </NavLink>
 
-            <NavLink onClick={()=> setClassLink('sidebar')} to='/textAnalysis/grammatic' className={ ({isActive}) => cn(styles['link'],{
+            <NavLink onClick={()=> setClassLink('sidebar')} to='/grammatic' className={ ({isActive}) => cn(styles['link'],{
                     [styles.active]: isActive,
                 })}>
                 Автокоррекция текста
